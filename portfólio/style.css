@@ -16,6 +16,7 @@ img{
     width:300px;
     margin-left: 250%;
     margin-top: -300px;
+    margin-bottom: 200px;
 }
 
 header{
@@ -43,6 +44,11 @@ header > nav > a:hover{
     transition: 0.5s;
     color: #001A23;
     
+}
+
+header > h1{
+    width: 0.1em;
+    text-align: center;
 }
 
 main{
