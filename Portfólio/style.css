@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rubik+Mono+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=M+PLUS+Code+Latin:wght@100..700&family=Rubik+Mono+One&display=swap');
+
+:root{
+    --fonte-button : 'Rubik', sans-serif;
+    --fonte-nav: 'DM Mono', sans-serif;
+    --fonte-h1: 'Rubik Mono One',monospace;
+    --fonte-corpo: 'M PLUS Code Latin', monospace;
+
+    --cor-botao:#A62934;
+    --cor-link:#D93636;
+    --cor-texto-corpo:#DEEFE7;
+} /* O :root serve para criação de variáveis*/
+
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+} /* essas configurações são feitas para zerar qualquer estilização que o navegador tenha por padrão*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+#header_logo > img{
+    width: 100px;
+    height: 100px;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+#header_logo > img:hover{
+    opacity: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 50px;
+    font-family: var(--fonte-nav);
+}
+
+.nav_links{
+    text-decoration: none;
+    color: var(--cor-link);
+    transition: 0.5s;
+}
+
+.nav_links:hover{
+    font-size: 1.25rem;
+}
+
+#header_button > button{
+    width: 150px;
+    height: 44px;
+    border-radius: 25px;
+    border: none;
+    font-family: var(--fonte-button);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--cor-botao);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#header_button > button:hover{
+    width: 155px;
+    height: 49px;
+    font-size: 1.5rem;
+    background-color: #000;
+    border: 1px solid var(--cor-botao);
+    color: var(--cor-botao);
+}
+
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--fonte-corpo);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Sobre_nos{
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+}
+
+#Sobre_nos p{
+    flex-direction: row;
+    width: 325px;
+    color:var(--cor-texto-corpo);
+    margin-bottom: 30px;
+}
+
+#Sobre_nos h1{
+    font-family: var(--fonte-h1);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--cor-link);
+    text-align: center;
+}
+
+#hexagono{
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor-botao);
+    border-radius: 15px;
+}
