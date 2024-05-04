@@ -14,16 +14,17 @@
     --fonte-h1: 'Rubik Mono One',monospace;
     --fonte-corpo: 'M PLUS Code Latin', monospace;
 
-    --cor-botao:#A62934;
-    --cor-link:#D93636;
-    --cor-texto-corpo:#DEEFE7;
+    --cor-botao:#010B40;
+    --cor-link:#2C4373;
+    --cor-texto-corpo:#D8D9D7;
+    --cor-fundo-cad: #010626;
 } /* O :root serve para criação de variáveis*/
 
 *{
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #0D0D0D;
 } /* essas configurações são feitas para zerar qualquer estilização que o navegador tenha por padrão*/
 
 header{
@@ -86,15 +87,16 @@ nav{
     width: 155px;
     height: 49px;
     font-size: 1.5rem;
-    background-color: #000;
-    border: 1px solid var(--cor-botao);
-    color: var(--cor-botao);
+    background-color: #0D0D0D;
+    border: 1px solid var(--cor-link);
+    color: var(--cor-link);
 }
 
 
 main{
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     font-family: var(--fonte-corpo);
     width: 700px;
     margin-left: auto;
@@ -105,6 +107,7 @@ main{
     display: flex;
     width: 700px;
     flex-direction: row;
+    margin-bottom: 25px;
 }
 
 #Sobre_nos p{
@@ -122,9 +125,56 @@ main{
     text-align: center;
 }
 
-#hexagono{
-    width: 150px;
-    height: 150px;
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+    color: var(--cor-texto-corpo);
+    background-color: var(--cor-fundo-cad);
+}
+
+#cadastro h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--cor-link);
+    background-color: var(--cor-fundo-cad);
+}
+
+#cadastro p{
+    font-size: 1.5rem;
+    width: 325px;
+    background-color: var(--cor-fundo-cad);
+    padding-left: 15px;
+}
+
+#input_cad{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    width: -375px;
+    padding-right: 30px;
+    justify-content:flex-end;
+    align-items: flex-end;
+    background-color: var(--cor-fundo-cad);
+}
+
+#input_cad input{
+    width: 200px;
+    height: 2rem;
+    padding-bottom: auto;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    background-color: var(--cor-texto-corpo);
+
+}
+
+#button_cad{
+    width: 25px;
+    height: 2rem;
     background-color: var(--cor-botao);
-    border-radius: 15px;
+    border: 1px solid black;
+    border-radius: 0px 4px 4px 0px;
 }
