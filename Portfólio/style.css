@@ -177,4 +177,19 @@ main{
     background-color: var(--cor-botao);
     border: 1px solid black;
     border-radius: 0px 4px 4px 0px;
+    transition: 0.5s;
+}
+
+
+#button_cad:hover{
+    background-color: #2C4373;
+    height: 30px;
+    width: 30px;
+
+}
+
+#button_cad i{
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-corpo);
+    cursor: pointer;
 }
