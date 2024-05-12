@@ -6,61 +6,56 @@
 :root{
    --fonte_corpo: "Poppins", sans-serif;
 
-    --cor-botao:#003694;
-    --cor-link:#D8D9D7;
-    --cor-texto-corpo:#161616;
-    --cor-subit: #002A72;
-    --cor-de-caixa:#0043B6;
-    --cor-fundo: #1E56B6;
+   --cor-000:#161616;
+   --cor-001:#D8D9D7;
+   --cor-002:#003694;
+    --cor-003: #002A72;
+    --cor-004:#0043B6;
+    --cor-005: #1E56B6;
 } /* O :root serve para criação de variáveis*/
 
+/* Configurações Globais */
 *{
     max-width: 100%;
     margin: 0;
     padding: 0;
-    font-family: var(--fonte_corpo);
-    /* color: var(--cor-link); */
-    
+    font-family: var(--fonte_corpo);   
 }
 
-body{
-    background-color: var(--cor-fundo);
+/*Configurações de classes gerais*/
+.container{
+    padding: 20px 50px 20px 50px;
 }
 
+/*Configurações do Header*/
 header{
-    display: inline-block;
-    width: 100%;
-    height: 175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom, var(--cor-003), var(--cor-005));
+    box-shadow: 0px 3px 4px #0000009c;
+
+}
+
+header > img{
+    max-width: 150px;
+    max-height: 150px;
 }
 
 #hd_itens{
     display: flex;
     justify-content: space-around;
+    gap: 80px;
+    max-width: 500px;
 }
 
-#hd_itens ul{
-    display: flex;
-    padding: 15px;
-    list-style: none;
+#hd_itens > a{
+    : ;
 }
 
-#hd_itens ul li{
-    padding: 44px;
-    color: var(--cor-link);
-}
-
-#tec{
-    display: flex;
-    flex-direction: row;
-}
-
-#tec h3{
-    color: var(--cor-subit);
-}
-
-.tecItem{
-    width: 75px;
-    height: 47px;
-    background-color: var(--cor-link);
-    color: #161616;
+#hd_btn{
+    width: 100px;
+    height: 50px; 
 }
