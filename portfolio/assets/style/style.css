@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
+/* Iportações de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 
 :root{
    --fonte_corpo: "Poppins", sans-serif;
+   --fonte-titulos: "Teko" , sans-serif; 
 
    --cor-000:#161616;
    --cor-001:#D8D9D7;
@@ -12,6 +14,7 @@
     --cor-003: #002A72;
     --cor-004:#0043B6;
     --cor-005: #1E56B6;
+    --cor-006: #AAC9FF;
 } /* O :root serve para criação de variáveis*/
 
 /* Configurações Globais */
@@ -34,12 +37,14 @@ header{
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to bottom, var(--cor-003), var(--cor-005));
-    box-shadow: 0px 3px 4px #0000009c;
+    box-shadow: 2px 3px 4px #000000;
 }
 
 header > img{
     max-width: 150px;
     max-height: 150px;
+    min-width: 75px;
+    min-height: 75px;
 }
 
 #hd_itens{
@@ -87,11 +92,123 @@ header > img{
 #hd_btn:active{
     box-shadow: none;
 }
-
+/* Configurações sOBRE MIM */
 #sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     padding: 55px 5px 35px 5px;
+    background:url(/portfolio/assets/imagens/fundo-sobre.jpg);
+    background-size: cover;
+    color: var(--cor-001);
+    text-shadow: 1px 1px 3px var(--cor-000);
 }
 
+#sobM h2{
+    font-family: var(--fonte-titulos);
+    color: var(--cor-006);
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+#sobM p{
+    width: 350px;
+    height: fit-content;
+    padding: 15px;
+    line-height: 1.75em;
+    background-color: #161616c7;
+    border-radius: 15px;
+    box-shadow: 4px 3px 4px #0000009c;
+}
+
+#eu{
+    display: flex;
+    width: 350px;
+    align-content: flex-end;
+}
+
+#eu img{
+    width: 650px;
+    height:650px;
+}
+/* Configurações TECNOLOGIAS */
+#tec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--cor-003);
+    width: 100%;
+    height: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#tec h1{
+    font-family: var(--fonte-titulos);
+    font-size: 7em;
+    padding-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--cor-005);
+    text-shadow: 1px 1px 3px var(--cor-000);
+}
+
+#tecItens{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.tecItem{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 210px;
+    background-color: var(--cor-001);
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 4px 3px 4px #0000009c ;
+    transition: 0.5s ease-in-out;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.tecItem:hover{
+    transform: scale(1.15);
+    background-color: var(--cor-006);
+    padding: 17px;
+    font-weight: 700;
+    border-bottom: 3px solid var(--cor-004);
+    border-right: 3px solid var(--cor-004);
+}
+
+.tecItem h3{
+    color: var(--cor-004);
+    font-family: var(--fonte-titulos);
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+
+.ling ul{
+    list-style: inside;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.tecn ul{
+    list-style: inside;
+    font-size: 2rem;
+    line-height: 1.5; 
+}
+/* Configuraçoes PROJETOS */
+
+/* Configurações Footer */
 footer{
     text-align: center;
     font-weight: 600;
