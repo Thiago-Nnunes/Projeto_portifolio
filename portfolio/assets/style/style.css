@@ -15,6 +15,8 @@
     --cor-004:#0043B6;
     --cor-005: #1E56B6;
     --cor-006: #AAC9FF;
+    --cor-007: #235ED5;
+    --cor-008: #0C2248
 } /* O :root serve para criação de variáveis*/
 
 /* Configurações Globais */
@@ -27,7 +29,9 @@
 
 /*Configurações de classes gerais*/
 .container{
-    padding: 20px 50px 20px 50px;
+    max-width: 100%;
+    height: 50px;
+    padding: 25px;
 }
 
 /*Configurações do Header*/
@@ -41,10 +45,8 @@ header{
 }
 
 header > img{
-    max-width: 150px;
-    max-height: 150px;
-    min-width: 75px;
-    min-height: 75px;
+    max-width: 75px;
+    max-height: 75px;
 }
 
 #hd_itens{
@@ -91,6 +93,7 @@ header > img{
 
 #hd_btn:active{
     box-shadow: none;
+    color: var(--cor-005);
 }
 /* Configurações sOBRE MIM */
 #sobre{
@@ -105,7 +108,7 @@ header > img{
     text-shadow: 1px 1px 3px var(--cor-000);
 }
 
-#sobM h2{
+#sobM h1{
     font-family: var(--fonte-titulos);
     color: var(--cor-006);
     text-align: center;
@@ -138,7 +141,7 @@ header > img{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: var(--cor-003);
+    background-color: var(--cor-008);
     width: 100%;
     height: 400px;
     padding-top: 25px;
@@ -169,29 +172,37 @@ header > img{
     flex-direction: column;
     width: 210px;
     height: 210px;
-    background-color: var(--cor-001);
+    background-color: var(--cor-008);
+    color: var(--cor-001);
     padding: 15px;
     border-radius: 15px;
     cursor: pointer;
-    box-shadow: 4px 3px 4px #0000009c ;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
     line-height: 1.5rem;
     font-weight: 400;
 }
 
 .tecItem:hover{
     transform: scale(1.15);
-    background-color: var(--cor-006);
+    background-color: var(--cor-001);
+    color: var(--cor-000);
     padding: 17px;
     font-weight: 700;
-    border-bottom: 3px solid var(--cor-004);
     border-right: 3px solid var(--cor-004);
+    border-bottom: 3px solid var(--cor-004);
+}
+
+.tecItem:active{
+    background-color: var(--cor-006);
+    border-right: 2px solid var(--cor-004);
+    border-bottom: 2px solid var(--cor-004);
 }
 
 .tecItem h3{
-    color: var(--cor-004);
+    color: var(--cor-005);
     font-family: var(--fonte-titulos);
     padding-bottom: 20px;
+    text-shadow: 1px 1px 3px var(--cor-000);
     font-size: 3em;
 }
 
@@ -207,6 +218,89 @@ header > img{
     line-height: 1.5; 
 }
 /* Configuraçoes PROJETOS */
+#precos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    background-color: var(--cor-002);
+}
+
+#precos > h1{
+    font-family: var(--fonte-titulos);
+    font-size: 7rem;
+    font-weight: 600;
+    padding-bottom: 25px;
+    color: var(--cor-006);
+    text-shadow: 1px 1px 3px var(--cor-000);
+}
+
+.prec_item h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--cor-001);
+    text-shadow: 1px 1px 3px var(--cor-000);
+    font-size: 3rem;
+    color: var;
+}
+
+.prec_item h2:hover{
+    text-shadow: 4px 1px 3px var(--cor-008);
+    cursor: pointer;
+}
+
+.tabela{
+    width: 700px;
+    border-collapse: collapse;
+    border:1px solid var(--cor-003);
+    text-align: center;
+    background-color: var(--cor-006);
+    margin-bottom: 15px;
+}
+
+.tabela:hover{
+    transform: scale(1.02);
+    box-shadow: 4px 4px 3px var(--cor-008);
+    border: 1px solid var(--cor-003);
+    cursor: pointer;
+}
+
+.tabela th{
+    background-color: var(--cor-003);
+    color: var(--cor-006);
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.tabela td{
+    border: 1px solid var(--cor-004);
+    padding: 20px;
+
+}
+
+.tipo{
+    font-weight: 700;
+    background-color: var(--cor-005);
+    color: var(--cor-008);
+}
+
+.descricao{
+    text-align: start;
+
+}
+
+.valor{
+
+}
+
+.valor::before{
+    content: "R$ ";
+}
+
+.valor::after{
+    content: ",00";
+}
 
 /* Configurações Footer */
 footer{
