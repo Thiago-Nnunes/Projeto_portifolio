@@ -302,6 +302,27 @@ header > img{
     content: ",00";
 }
 
+/*Configuração Depoimentos*/
+#dep{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 450px;
+    width: 100%;
+    background-color: var(--cor-006);
+}
+
+/*Configuração Contato*/
+
+#cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    background-color: var(--cor-008);
+}
+
 /* Configurações Footer */
 footer{
     text-align: center;
