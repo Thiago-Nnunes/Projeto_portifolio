@@ -42,8 +42,6 @@ header{
     align-items: center;
     background-image: linear-gradient(to bottom, var(--cor-003), var(--cor-005));
     box-shadow: 2px 3px 4px #000000;
-    position: fixed;
-    width: 98%;
 }
 
 header > img{
@@ -104,7 +102,7 @@ header > img{
     justify-content: space-around;
     align-items: center;
     padding: 55px 5px 35px 5px;
-    background:url(/assets/imagens/fundo-sobre.jpg);
+    background:url(../imagens/fundo-sobre.jpg);
     background-size: cover;
     color: var(--cor-001);
     text-shadow: 1px 1px 3px var(--cor-000);
@@ -254,7 +252,8 @@ header > img{
 }
 
 .tabela{
-    width: 700px;
+    width: 900px;
+    font-size: 0.95rem;
     border-collapse: collapse;
     border:1px solid var(--cor-003);
     text-align: center;
@@ -295,7 +294,8 @@ header > img{
 }
 
 .valor{
-
+    color: var(--cor-003);
+    font-weight: 600;
 }
 
 .valor::before{
@@ -314,6 +314,12 @@ header > img{
     height: 450px;
     width: 100%;
     background-color: var(--cor-006);
+}
+
+.depoiment h2{
+    padding-top: 25px;
+    font-size: 4rem;
+    font-family: var(--fonte-titulos);
 }
 
 /*Configuração Contato*/
