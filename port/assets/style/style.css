@@ -316,10 +316,38 @@ header > img{
     background-color: var(--cor-006);
 }
 
+.depoiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
 .depoiment h2{
     padding-top: 25px;
     font-size: 4rem;
     font-family: var(--fonte-titulos);
+    color: var(--cor-008);
+    text-shadow: 2px 2px 3px #0000009c;
+}
+
+.depoiment iframe{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 2px solid var(--cor-004);
+    box-shadow: 3px 3px 3px #0000009c;
+    transition: 0.7s ease-in-out;
+}
+
+.depoiment iframe:hover{
+    box-shadow: none;
+    border: none;
+}
+
+.depoiment p{
+    text-align: center;
 }
 
 /*Configuração Contato*/
