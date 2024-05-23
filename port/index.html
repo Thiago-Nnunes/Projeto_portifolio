@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Projeto</title>
 </head>
@@ -14,11 +14,13 @@
             <a href="#sobre">Sobre</a>
             <a href="#tec">Tecnologias</a>
             <a href="#precos">Preços</a>
-            <a href="#">Depoimentos</a>
+            <a href="#dep">Depoimentos</a>
         </nav>
-        <button id="hd_btn" href="">
-        CONTATO
-        </button>
+        <a href="#cont">
+            <button id="hd_btn" href="">
+                CONTATO
+            </button>
+        </a>
     </header>
     <main>
 
@@ -157,22 +159,22 @@
         </section>
 
         <section id="dep">
+
+            <h2>Depoimentos</h2>
+
             <div class="depoiment">
-                <h2>Depoimento</h2>
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/l_5qTI5EHgc?si=R5lVQoStrogCajk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, facilis distinctio. Odit architecto laudantium perspiciatis doloribus dignissimos aspernatur autem! Esse autem neque eos obcaecati ab.</p>
             </div>
             <div class="depoiment">
-                <h2>Depoimentos</h2>
                 
-                <iframe src="https://www.youtube.com/embed/l_5qTI5EHgc?si=R5lVQoStrogCajk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l_5qTI5EHgc?si=R5lVQoStrogCajk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem ab aut tenetur! Eum facilis veniam error quia vitae consectetur dicta quis, illum sequi sint.</p>
             </div>
             <div class="depoiment">
-                <h2>Depoimentos</h2>
                 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/l_5qTI5EHgc?si=R5lVQoStrogCajk6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -182,9 +184,33 @@
 
         <section id="cont">
             <h2>Contate-nos</h2>
+            
+            <p>
+                Entre em contato para fazer um orçamento:
+            </p>
 
-            <form action="">
-                <input type="text">
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="Nome" id="nome">
+                    </div>
+
+                    <div>
+                        <label for="">Sobrenome</label>
+                        <input type="text" name="Sobrenome" id="sobn">
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="">Telefone</label>
+                    <input type="text" name="contato" id="contato">
+                </div>
             </form>
         </section>
     </main>
