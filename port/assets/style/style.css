@@ -145,6 +145,13 @@ header > img{
     background-color: #0c2248d2;
     border-radius: 15px;
     box-shadow: 4px 3px 4px #0000009c;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#sobM p:hover{
+    transform: scale(1.05);
+    background-color: var(--cor-008);
 }
 
 #sobM img{
@@ -154,6 +161,12 @@ header > img{
     background-color: var(--cor05-tpr);
     box-shadow: var(--sombra-caixa);
     border-radius: 15px;
+    transition: 0.6s ease-in-out;
+    cursor: pointer;
+}
+
+#sobM img:hover{
+    transform: scale(1.05);
 }
 
 /* Configurações TECNOLOGIAS */
