@@ -19,6 +19,7 @@
     --cor-007: #235ED5;
     --cor-008: #0C2248;
     --sombra-caixa: 4px 3px 4px #0000009c;
+    --sombra-texto: 3px 3px 3px #161616d0;
 } /* O :root serve para criação de variáveis*/
 
 /* Configurações Globais */
@@ -115,7 +116,7 @@ header > img{
     background:url(../imagens/fundo-sobre.jpg);
     background-size: cover;
     color: var(--cor-001);
-    text-shadow: 1px 1px 3px var(--cor-000);
+    text-shadow: var(--sombra-texto);
 }
 
 #sobre h1{
@@ -144,7 +145,7 @@ header > img{
     line-height: 1.75em;
     background-color: #0c2248d2;
     border-radius: 15px;
-    box-shadow: 4px 3px 4px #0000009c;
+    box-shadow: var(--sombra-caixa);
     transition: 0.6s ease-in-out;
     cursor: pointer;
 }
@@ -188,7 +189,7 @@ header > img{
     font-weight: 600;
     text-align: center;
     color: var(--cor-005);
-    text-shadow: 1px 1px 3px var(--cor-000);
+    text-shadow:var(--sombra-texto);
 }
 
 #tecItens{
@@ -236,7 +237,7 @@ header > img{
     color: var(--cor-005);
     font-family: var(--fonte-titulos);
     padding-bottom: 20px;
-    text-shadow: 1px 1px 3px var(--cor-000);
+    text-shadow: var(--sombra-texto);
     font-size: 3rem;
 }
 
@@ -266,14 +267,14 @@ header > img{
     font-weight: 600;
     padding-bottom: 25px;
     color: var(--cor-006);
-    text-shadow: 1px 1px 3px var(--cor-000);
+    text-shadow: var(--sombra-texto);
 }
 
 .prec_item h2{
     text-align: center;
     padding-bottom: 10px;
     color: var(--cor-001);
-    text-shadow: 1px 1px 3px var(--cor-000);
+    text-shadow: var(--sombra-texto);
     font-size: 3rem;
     color: var;
 }
@@ -364,7 +365,7 @@ header > img{
     font-size: 3rem;
     font-family: var(--fonte-titulos);
     color: var(--cor-008);
-    text-shadow: 2px 2px 3px #0000009c;
+    text-shadow: var(--sombra-texto);
 }
 
 .depoiment iframe{
@@ -373,7 +374,7 @@ header > img{
     margin-bottom: 15px;
     border-radius: 3px;
     border: 2px solid var(--cor-004);
-    box-shadow: 3px 3px 3px #0000009c;
+    box-shadow: var(--sombra-caixa);
     transition: 0.7s ease-in-out;
 }
 
@@ -405,7 +406,7 @@ header > img{
     font-size: 3rem;
     font-family: var(--fonte-titulos);
     color: var(--cor-005);
-    text-shadow: 2px 2px 3px #0000009c;
+    text-shadow:var(--sombra-texto);
 }
 
 #cont p{
