@@ -12,6 +12,7 @@
    --cor-001:#D8D9D7;
    --cor-002:#003694;
     --cor-003: #002A72;
+    --cor003-tpr:#002a72e0;
     --cor-004:#0043B6;
     --cor-005: #1E56B6;
     --cor05-tpr:#1e56b6d7;
@@ -43,7 +44,15 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--cor-003), var(--cor-005));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-image: linear-gradient(to bottom, var(--cor05-tpr), var(--cor003-tpr));
     box-shadow: 2px 3px 4px #000000;
 }
 
@@ -112,6 +121,7 @@ header > img{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top:75px;
     padding-bottom: 25px;
     background:url(../imagens/fundo-sobre.jpg);
     background-size: cover;
